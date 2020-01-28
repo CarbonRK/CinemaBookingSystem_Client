@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="577.0" style="-fx-background-color: #3E4760;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ViewClientInformationsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3447" height="170.0" layoutX="96.0" layoutY="108.0" stroke="#ab7cff" strokeDashOffset="24.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="99.0" strokeType="OUTSIDE" width="386.0" />
+      <Label layoutX="127.0" layoutY="130.0" text="Name" textFill="WHITE" />
+      <Label layoutX="126.0" layoutY="156.0" text="Surname" textFill="WHITE" />
+      <Label layoutX="126.0" layoutY="181.0" text="E-mail" textFill="WHITE" />
+      <Label layoutX="127.0" layoutY="207.0" text="Sex" textFill="WHITE" />
+      <Label layoutX="126.0" layoutY="231.0" prefHeight="26.0" prefWidth="85.0" text="Birthday" textFill="WHITE" />
+      <Label fx:id="name" layoutX="258.0" layoutY="130.0" prefHeight="26.0" prefWidth="195.0" textFill="WHITE"/>
+      <Label fx:id="surname" layoutX="258.0" layoutY="156.0" prefHeight="26.0" prefWidth="195.0" textFill="WHITE"/>
+      <Label fx:id="email" layoutX="258.0" layoutY="181.0" prefHeight="26.0" prefWidth="195.0" textFill="WHITE"/>
+      <Label fx:id="sex" layoutX="258.0" layoutY="207.0" prefHeight="26.0" prefWidth="195.0" textFill="WHITE"/>
+      <Label fx:id="birthday" layoutX="258.0" layoutY="231.0" prefHeight="26.0" prefWidth="195.0" textFill="WHITE"/>
+   </children>
+</AnchorPane>

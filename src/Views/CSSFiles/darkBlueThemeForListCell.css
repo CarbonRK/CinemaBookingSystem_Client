@@ -1,0 +1,37 @@
+.list-view {
+    -fx-background-color: #3e4760;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #ab7cff;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #3e4760;
+    -fx-text-fill: white;
+    -fx-border-color: #3e4760;
+}
+
+.list-cell.cell {
+    -fx-background-color: #2d3447;
+}
+
+.list-view .label {
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell:empty {
+    visibility:hidden;
+}
+
+.list-view .list-cell:disabled{
+    visibility:hidden;
+}
+
+.scroll-bar:vertical{
+    -fx-background-color: #3e4760;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #2d3447;
+}

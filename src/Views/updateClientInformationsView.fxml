@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="577.0" style="-fx-background-color: #3E4760;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateClientInformationsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3447" height="170.0" layoutX="96.0" layoutY="108.0" stroke="#ab7cff" strokeDashOffset="24.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="99.0" strokeType="OUTSIDE" width="386.0" />
+      <Label layoutX="123.0" layoutY="148.0" text="Name" textFill="WHITE" />
+      <JFXTextField fx:id="name" focusColor="WHITE" layoutX="253.0" layoutY="143.0" prefHeight="25.0" prefWidth="207.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="#ab7cff" />
+      <Label layoutX="123.0" layoutY="174.0" text="Surname" textFill="WHITE" />
+      <JFXTextField fx:id="surname" focusColor="WHITE" layoutX="253.0" layoutY="169.0" prefHeight="25.0" prefWidth="207.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="#ab7cff" />
+      <Label layoutX="124.0" layoutY="201.0" text="Sex" textFill="WHITE" />
+      <JFXComboBox fx:id="sex" focusColor="WHITE" layoutX="254.0" layoutY="196.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="207.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="#ab7cff" stylesheets="@CSSFiles/whiteTextInComboBox.css">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Female" />
+               <String fx:value="Male" />
+            </FXCollections>
+         </items>
+      </JFXComboBox>
+      <Label layoutX="124.0" layoutY="230.0" text="Birthday" textFill="WHITE" />
+      <JFXComboBox fx:id="year" focusColor="WHITE" layoutX="383.0" layoutY="223.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="78.0" promptText="Year" style="-fx-text-inner-color: #ffffff; -fx-prompt-text-fill: #ffffff; -jfx-focus-color: #ffffff;" stylesheets="@CSSFiles/whiteTextInComboBox.css" unFocusColor="#ab7cff" />
+      <JFXComboBox fx:id="month" focusColor="WHITE" layoutX="318.0" layoutY="223.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="65.0" promptText="Month" style="-fx-text-inner-color: #ffffff; -fx-prompt-text-fill: #ffffff; -jfx-focus-color: #ffffff;" stylesheets="@CSSFiles/whiteTextInComboBox.css" unFocusColor="#ab7cff" />
+      <JFXComboBox fx:id="day" focusColor="WHITE" layoutX="253.0" layoutY="223.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="65.0" promptText="Day" style="-fx-text-inner-color: #ffffff; -fx-prompt-text-fill: #ffffff; -jfx-focus-color: #ffffff;" stylesheets="@CSSFiles/whiteTextInComboBox.css" unFocusColor="#ab7cff" />
+      <JFXButton fx:id="changeInfoAccept" layoutX="96.0" layoutY="338.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="386.0" style="-fx-background-color: #ab7cff;" text="Accept" textFill="WHITE" />
+   </children>
+</AnchorPane>

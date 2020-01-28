@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoggedInClientController">
+   <children>
+      <AnchorPane fx:id="anchorPane" layoutX="209.0" layoutY="15.0" prefHeight="471.0" prefWidth="577.0" style="-fx-background-color: #3e4760;" />
+      <AnchorPane layoutX="14.0" layoutY="15.0" prefHeight="471.0" prefWidth="165.0" style="-fx-background-color: #3e4760;">
+         <children>
+            <JFXButton fx:id="availableFilms" layoutX="-2.0" layoutY="1.0" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #ab7cff; -fx-border-color: #3e4760;" text="Available films" textFill="WHITE" />
+            <JFXButton fx:id="myTickets" layoutX="-2.0" layoutY="37.0" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #ab7cff; -fx-border-color: #3e4760;" text="My tickets" textFill="WHITE" />
+            <JFXButton fx:id="myInfo" layoutX="-2.0" layoutY="73.0" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #ab7cff; -fx-border-color: #3e4760;" text="My informations" textFill="WHITE" />
+            <JFXButton fx:id="changeInfo" layoutX="-2.0" layoutY="109.0" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #ab7cff; -fx-border-color: #3e4760;" text="Edit my informations" textFill="WHITE" />
+            <JFXButton fx:id="logOut" layoutX="-2.0" layoutY="181.0" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #ab7cff; -fx-border-color: #3e4760;" text="Log out" textFill="WHITE" />
+            <JFXButton layoutX="-2.0" layoutY="217.0" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #ab7cff; -fx-border-color: #3e4760;" text="Delete account" textFill="WHITE" fx:id="delete" />
+            <JFXButton fx:id="changePassword" layoutX="-2.0" layoutY="145.0" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #ab7cff; -fx-border-color: #3e4760;" text="Change password" textFill="WHITE" />
+            <ImageView fitHeight="150.0" fitWidth="124.0" layoutX="26.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/masksSublogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegisterNewClientController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3e4760" height="225.0" layoutX="219.0" layoutY="62.0" stroke="#ab7cff" strokeDashOffset="24.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="99.0" strokeType="OUTSIDE" width="386.0" />
+      <Label layoutX="255.0" layoutY="75.0" prefHeight="16.0" prefWidth="103.0" text="Name" textFill="WHITE" />
+      <Label layoutX="255.0" layoutY="100.0" prefHeight="16.0" prefWidth="103.0" text="Surname" textFill="WHITE" />
+      <Label layoutX="255.0" layoutY="127.0" prefHeight="16.0" prefWidth="103.0" text="E-mail" textFill="WHITE" />
+      <Label layoutX="255.0" layoutY="153.0" prefHeight="16.0" prefWidth="103.0" text="Password" textFill="WHITE" />
+      <Label layoutX="255.0" layoutY="179.0" prefHeight="26.0" prefWidth="129.0" text="Retype Password" textFill="WHITE" />
+      <Label layoutX="255.0" layoutY="206.0" prefHeight="16.0" prefWidth="103.0" text="Sex" textFill="WHITE" />
+      <Label layoutX="255.0" layoutY="235.0" prefHeight="16.0" prefWidth="103.0" text="Birthday" textFill="WHITE" />
+      <JFXTextField fx:id="name" focusColor="WHITE" layoutX="390.0" layoutY="75.0" prefHeight="26.0" prefWidth="195.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="#ab7cff" />
+      <JFXTextField fx:id="surname" focusColor="WHITE" layoutX="390.0" layoutY="100.0" prefHeight="26.0" prefWidth="195.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="#ab7cff" />
+      <JFXTextField fx:id="email" focusColor="WHITE" layoutX="390.0" layoutY="127.0" prefHeight="26.0" prefWidth="195.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="#ab7cff" />
+      <JFXPasswordField fx:id="pass" focusColor="WHITE" layoutX="390.0" layoutY="152.0" prefHeight="26.0" prefWidth="195.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="#ab7cff" />
+      <JFXPasswordField fx:id="re_pass" focusColor="WHITE" layoutX="390.0" layoutY="178.0" prefHeight="26.0" prefWidth="195.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="#ab7cff" />
+      <JFXComboBox id="sex" fx:id="sex" focusColor="WHITE" layoutX="390.0" layoutY="204.0" prefHeight="25.0" prefWidth="195.0" style="-fx-text-inner-color: #ffffff; -fx-text-fill: #ffffff;" unFocusColor="#ab7cff" stylesheets="@CSSFiles/whiteTextInComboBox.css">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Female" />
+            <String fx:value="Male" />
+         </FXCollections>
+      </items>
+      </JFXComboBox>
+      <JFXComboBox fx:id="year" focusColor="WHITE" layoutX="510.0" layoutY="230.0" prefHeight="26.0" prefWidth="75.0" promptText="Year" style="-fx-text-inner-color: #ffffff; -fx-prompt-text-fill: #ffffff;" unFocusColor="#ab7cff" stylesheets="@CSSFiles/whiteTextInComboBox.css"/>
+      <JFXComboBox fx:id="month" focusColor="WHITE" layoutX="450.0" layoutY="230.0" prefHeight="26.0" prefWidth="60.0" promptText="Month" style="-fx-text-inner-color: #ffffff; -fx-prompt-text-fill: #ffffff;" unFocusColor="#ab7cff" stylesheets="@CSSFiles/whiteTextInComboBox.css"/>
+      <JFXComboBox fx:id="day" focusColor="WHITE" layoutX="390.0" layoutY="230.0" maxWidth="-Infinity" prefHeight="26.0" prefWidth="60.0" promptText="Day" style="-fx-text-inner-color: #ffffff; -fx-prompt-text-fill: #ffffff;" unFocusColor="#ab7cff" stylesheets="@CSSFiles/whiteTextInComboBox.css"/>
+      <JFXButton fx:id="signIn" layoutX="219.0" layoutY="332.0" prefHeight="26.0" prefWidth="388.0" style="-fx-background-color: #ab7cff;" text="Sign in" textFill="WHITE" />
+      <JFXButton fx:id="back" layoutX="219.0" layoutY="364.0" prefHeight="26.0" prefWidth="388.0" style="-fx-background-color: #ab7cff;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>
